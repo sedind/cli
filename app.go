@@ -97,7 +97,6 @@ func (a *App) RunContext(ctx context.Context, args []string) error {
 	flagSet.Usage = func() {
 		a.Usage(a.Writer)
 	}
-
 	// parse arguments
 	flagSet.Parse(args[1:])
 
