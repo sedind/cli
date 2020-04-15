@@ -45,12 +45,14 @@ type App struct {
 // New creates a new CLI application
 func New() *App {
 	return &App{
-		Name:        filepath.Base(os.Args[0]),
-		Description: "A new cli application",
-		Version:     "v0.0.0",
-		Metadata:    make(map[string]interface{}),
-		Writer:      os.Stdout,
-		ErrWriter:   os.Stderr,
+		Name:           filepath.Base(os.Args[0]),
+		Description:    "A new cli application",
+		Version:        "v0.0.0",
+		Metadata:       make(map[string]interface{}),
+		Writer:         os.Stdout,
+		ErrWriter:      os.Stderr,
+		UseHelpFlag:    true,
+		UseVersionFlag: true,
 	}
 }
 
