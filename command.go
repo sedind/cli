@@ -134,7 +134,7 @@ func (c *Command) Run(ctx *Context) (err error) {
 	return nil
 }
 
-// SubCommand returns the named sub command on Commans. Returns nil if the command does not exist
+// SubCommand returns the named sub command on Commands. Returns nil if the command does not exist
 func (c *Command) SubCommand(name string) *Command {
 	for _, c := range c.Commands {
 		if c.HasName(name) {

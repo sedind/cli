@@ -41,7 +41,7 @@ func (f Flags) FlagSet(name string, errHandler flag.ErrorHandling) (*flag.FlagSe
 	return set, nil
 }
 
-// Len returns lenght of a flags slice
+// Len returns length of a flags slice
 func (f Flags) Len() int {
 	return len(f)
 }
