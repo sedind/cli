@@ -3,11 +3,6 @@
 bin/
 tmp/
 vendor/
-.env.*
-.env.e2e
-.env
-build/
-docs/
 coverage.txt
 debug
 .vscode/
