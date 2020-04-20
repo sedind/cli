@@ -63,9 +63,9 @@ import (
 
 func main() {
   app := cli.New()
-  app.Name: "greet"
-  app.Description: "creates greeting message"
-  app.Action: func(c *cli.Context) error {
+  app.Name = "greet"
+  app.Description =  "creates greeting message"
+  app.Action =  func(c *cli.Context) error {
     fmt.Println("Howdy!")
     return nil
   }
